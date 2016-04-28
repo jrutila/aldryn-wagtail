@@ -237,7 +237,7 @@ class Form(forms.BaseForm):
                     'stream': sys.stdout,
                 },
                 'null': {
-                    'class': 'django.utils.log.NullHandler',
+                    'class': 'logging.NullHandler',
                 },
             },
             'loggers': {
@@ -329,5 +329,4 @@ class Form(forms.BaseForm):
         mcmds = settings['MIGRATION_COMMANDS']
 
         mcmds.append('CACHE_URL="locmem://" python manage.py createcachetable django_dbcache; exit 0')
-        mcmds.append('python manage.py syncdb --noinput')
         mcmds.append('python manage.py migrate --list --noinput && python manage.py migrate --noinput && python manage.py migrate --list --noinput')
