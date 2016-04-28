@@ -17,28 +17,8 @@ aldryn_addons.settings.load(locals())
 
 INSTALLED_APPS.extend([
     # add your project specific apps here
-    'wagtail.wagtailforms',
-	'wagtail.wagtailredirects',
-	'wagtail.wagtailembeds',
-	'wagtail.wagtailsites',
-	'wagtail.wagtailusers',
-	'wagtail.wagtailsnippets',
-	'wagtail.wagtaildocs',
-	'wagtail.wagtailimages',
-	'wagtail.wagtailsearch',
-	'wagtail.wagtailadmin',
-	'wagtail.wagtailcore',
-	'modelcluster',
-	'taggit',
-	'compressor',
-	'demo',
 ])
 
 MIDDLEWARE_CLASSES.extend([
     # add your own middlewares here
-    'wagtail.wagtailcore.middleware.SiteMiddleware',
-	'wagtail.wagtailredirects.middleware.RedirectMiddleware',
 ])
-
-WAGTAIL_SITE_NAME = 'My Example Site'
-
