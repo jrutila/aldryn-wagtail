@@ -9,9 +9,9 @@ INSTALLED_ADDONS = [
     # </INSTALLED_ADDONS>
 ]
 
+
 import aldryn_addons.settings
 aldryn_addons.settings.load(locals())
-
 
 # all django settings can be altered here
 
@@ -28,9 +28,10 @@ INSTALLED_APPS.extend([
 	'wagtail.wagtailsearch',
 	'wagtail.wagtailadmin',
 	'wagtail.wagtailcore',
-
 	'modelcluster',
 	'taggit',
+	'compressor',
+	'demo',
 ])
 
 MIDDLEWARE_CLASSES.extend([
