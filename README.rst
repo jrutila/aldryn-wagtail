@@ -17,7 +17,16 @@ Installation & Updates
 Aldryn Platform Users
 *********************
 
-Nothing to do. ``aldryn-wagtail`` is part of the Aldryn Platform.
+We will introduce modifications to the UI that will allow users to install project types (i.e. Wagtail) as easily as django CMS.
+In the meantime, please do the following:
+
+1. Click «Add new Project» on the `Control Panel`_
+2. Choose «Add a blank new Project»
+3. Give your project a name, be sure to uncheck «Install django CMS» and click «Create Project»
+4. Go to «Manage Addons» and search for «Aldryn Wagtail» and click «Install for free»
+5. Define «Wagtail Sitename» and click «Install Aldryn Wagtail»
+6. Go to «Dashboard» and click «Deploy Test» 
+7. Once deployment is done click «open site»
 
 *******************
 Manual Installation
@@ -62,6 +71,7 @@ Wagtail Support
 
 Divio does not offer support for Wagtail itself. Please check out `wagtail.io`_ for help.
 
+.. _Control Panel: https://control.aldryn.com/control/
 .. _issues: https://github.com/aldryn/aldryn-wagtail/issues
 .. _pull requests: https://github.com/aldryn/aldryn-wagtail/pulls
 .. _aldryn-wagtail: https://github.com/aldryn/aldryn-wagtail
