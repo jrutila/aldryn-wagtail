@@ -22,7 +22,7 @@ In the meantime, please do the following:
 
 1. Click «Add new Project» on the `Control Panel`_
 2. Choose «Add a blank new Project»
-3. Give your project a name, be sure to uncheck «Install django CMS» and click «Create Project»
+3. Give your project a name, select «Aldryn Blank Boilerplate», make sure to uncheck «Install django CMS» and click «Create Project»
 4. Go to «Manage Addons» and search for «Aldryn Wagtail» and click «Install for free»
 5. Define «Wagtail Sitename» and click «Install Aldryn Wagtail»
 6. Go to «Dashboard» and click «Deploy Test» 
