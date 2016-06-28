@@ -30,7 +30,13 @@ class Form(forms.BaseForm):
             'wagtail.wagtailcore.middleware.SiteMiddleware',
             'wagtail.wagtailredirects.middleware.RedirectMiddleware',
         ])
-        settings['ADDON_URLS'].append('aldryn_wagtail.urls')
+        # admin and cms urls need to be first, since we're overriding the
+        # default admin.
+        settings['ADDON_URLS_I18N'].insert(
+            0,
+            'aldryn_wagtail.urls',
+        )
+        settings['ADDON_URLS_I18N_LAST'] = 'aldryn_wagtail.page_urls'
         settings['WAGTAIL_SITE_NAME'] = data['wagtail_site_name']
 
         return settings
