@@ -12,9 +12,9 @@ setup(
     url='https://github.com/aldryn/aldryn-wagtail',
     packages=find_packages(),
     platforms=['OS Independent'],
-    install_requires=(        
+    install_requires=(
         'aldryn-addons',
-        'wagtail==1.5.2',
+        'wagtail==1.7',
         'html5lib>=0.90,!=0.9999,!=0.99999,<0.99999999',
     ),
     include_package_data=True,
