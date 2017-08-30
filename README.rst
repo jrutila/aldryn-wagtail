@@ -25,7 +25,7 @@ In the meantime, please do the following:
 3. Give your project a name, select «Aldryn Blank Boilerplate», make sure to uncheck «Install django CMS» and click «Create Project»
 4. Go to «Manage Addons» and search for «Aldryn Wagtail» and click «Install for free»
 5. Define «Wagtail Sitename» and click «Install Aldryn Wagtail»
-6. Go to «Dashboard» and click «Deploy Test» 
+6. Go to «Dashboard» and click «Deploy Test»
 7. Once deployment is done click «open site»
 
 *******************
@@ -39,7 +39,7 @@ Manual Installation
 Add ``aldryn-wagtail`` to your projects ``requirements.txt`` or pip
 install it.::
 
-    pip install aldryn-wagtail==1.4.3.0
+    pip install aldryn-wagtail==<version number>
 
 
 The version is made up of the Wagtail release with an added digit for the
