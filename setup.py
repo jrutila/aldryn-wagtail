@@ -15,6 +15,7 @@ setup(
     install_requires=(
         'aldryn-addons',
         'wagtail==1.9.0',
+        'djangorestframework<3.7',
     ),
     include_package_data=True,
     zip_safe=False,
