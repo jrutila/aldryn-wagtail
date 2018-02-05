@@ -14,7 +14,7 @@ setup(
     platforms=['OS Independent'],
     install_requires=(
         'aldryn-addons',
-        'wagtail==1.12',
+        'wagtail==1.13.1',
     ),
     include_package_data=True,
     zip_safe=False,
