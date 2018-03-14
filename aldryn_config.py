@@ -11,24 +11,24 @@ class Form(forms.BaseForm):
 
     def to_settings(self, data, settings):
         settings['INSTALLED_APPS'].extend([
-            'wagtail.wagtailforms',
-            'wagtail.wagtailredirects',
-            'wagtail.wagtailembeds',
-            'wagtail.wagtailsites',
-            'wagtail.wagtailusers',
-            'wagtail.wagtailsnippets',
-            'wagtail.wagtaildocs',
-            'wagtail.wagtailimages',
-            'wagtail.wagtailsearch',
-            'wagtail.wagtailadmin',
-            'wagtail.wagtailcore',
+            'wagtail.contrib.forms',
+            'wagtail.contrib.redirects',
+            'wagtail.embeds',
+            'wagtail.sites',
+            'wagtail.users',
+            'wagtail.snippets',
+            'wagtail.documents',
+            'wagtail.images',
+            'wagtail.search',
+            'wagtail.admin',
+            'wagtail.core',
 
             'modelcluster',
             'taggit',
         ])
         settings['MIDDLEWARE_CLASSES'].extend([
-            'wagtail.wagtailcore.middleware.SiteMiddleware',
-            'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+            'wagtail.core.middleware.SiteMiddleware',
+            'wagtail.contrib.redirects.middleware.RedirectMiddleware',
         ])
         # admin and cms urls need to be first, since we're overriding the
         # default admin.
