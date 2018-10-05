@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+2.2.2.2 (2018-10-05)
+--------------------
+
+* Now adds `wagtail.contrib.modeladmin` to INSTALLED_APPS by default.
+
+
 2.2.2.1 (2018-10-05)
 --------------------
 
